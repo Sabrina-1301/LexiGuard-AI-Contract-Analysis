@@ -1,0 +1,37 @@
+{
+  "contracts": {
+    "description": "Stores uploaded contracts and overall analysis results",
+    "fields": {
+      "filename": "string",
+      "hash": "string",
+      "timestamp": "timestamp",
+      "risk_score": "number",
+      "risks": "array<object>",
+      "summary": "string",
+      "full_text_snippet": "string",
+      "source": "string"
+    },
+    "indexes": ["hash"]
+  },
+  "risk_analysis": {
+    "description": "Optional per-clause risk analysis entries (if stored separately)",
+    "fields": {
+      "contract_id": "string",
+      "clause": "string",
+      "level": "string",
+      "score": "number",
+      "explanation": "string",
+      "type": "string",
+      "timestamp": "timestamp"
+    }
+  },
+  "audit_logs": {
+    "description": "Tracks user actions and system events",
+    "fields": {
+      "user": "string",
+      "action": "string",
+      "details": "string",
+      "timestamp": "timestamp"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+flask
+streamlit
+spacy
+nltk
+scikit-learn
+firebase-admin
+pdfplumber
+python-docx
+pandas
+numpy
+fpdf
