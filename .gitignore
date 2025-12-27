@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+AI-Contract-Analysis-System/app.log
+AI-Contract-Analysis-System/reports/*.pdf
+serviceAccountKey.json
